@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+if (PHP_SAPI !== 'cli') {
+    echo 'Warning: this project should be invoked via the CLI version of PHP, not the '.PHP_SAPI.' SAPI'.PHP_EOL;
+}
+
+$appPath = realpath(__DIR__.'/../');
+require $appPath.'/vendor/autoload.php';
+
+use R2A\Application;
+
+$application = new Application();
+$application->setup($appPath);
+$application->run();

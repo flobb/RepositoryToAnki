@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  tools:
+    environment:
+      - SSH_AUTH_SOCK=/tmp/ssh_auth_sock
+    volumes:
+      - ~/.ssh/known_hosts:/var/www/.ssh/known_hosts:ro
+      - $SSH_AUTH_SOCK:/tmp/ssh_auth_sock:ro
+      - ~/.composer:/var/www/.composer
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro

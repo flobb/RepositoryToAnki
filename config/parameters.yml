@@ -1,0 +1,4 @@
+storage: /repositories
+export: /export
+csvDelimiter: ;
+csvEnclosure: "\""
