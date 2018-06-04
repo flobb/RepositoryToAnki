@@ -24,7 +24,7 @@ bin/console export 'urltomyrepo.git'
 
 ## Format
 
-You have to create files with the "card" extensions.
+You have to create files with the "card" extension.
 
 The files can be in subfolder, as many as you want. The folder's name will be added to the tag list of the card.
 
