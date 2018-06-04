@@ -1,5 +1,5 @@
 {
-  "name": "flob/repository-to-anki",
+  "name": "florianbelhomme/repository-to-anki",
   "description": "Convert a git repository with folders and files into a CSV file that can be imported into Anki",
   "license": "MIT",
   "authors": [
@@ -10,9 +10,9 @@
   ],
   "require": {
     "php": ">=7.1",
-    "symfony/console": "^3.2",
-    "symfony/yaml": "^3.2",
-    "symfony/finder": "^3.2",
+    "symfony/console": "^4.0",
+    "symfony/yaml": "^4.0",
+    "symfony/finder": "^4.0",
     "gitonomy/gitlib": "^1.0"
   },
   "autoload": {

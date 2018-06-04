@@ -72,18 +72,18 @@ class Export extends Command
         $manager = new RepositoryManager($repositoryPath, $repositoryUrl);
 
         if (!file_exists($repositoryPath)) {
-            $output->writeln('Cloning...');
+            $output->writeln('<info>Cloning...</info>');
             $manager->cloneRepository();
         } else {
-            $output->writeln('Pulling...');
+            $output->writeln('<info>Pulling...</info>');
             $manager->update();
         }
 
-        $output->writeln('Done');
-        $output->writeln('Exporting...');
+        $output->writeln('<info>Done');
+        $output->writeln('<info>Exporting...</info>');
 
         $manager->export($export, $name, $app->getParameter('csvDelimiter'), $app->getParameter('csvEnclosure'));
 
-        $output->writeln('Done');
+        $output->writeln('<info>Done</info>');
     }
 }

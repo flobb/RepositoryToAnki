@@ -4,18 +4,35 @@ Convert a git repository with folders and files into a CSV file that can be impo
 
 ## Requirements
 
+* [Docker & Docker-Compose](https://www.docker.com/) Community-Edition (CE) is fine
+
+OR
+
+* [PHP](https://php.net)
 * [Git](https://git-scm.com/)
 * [Composer](https://getcomposer.org/)
 * A git repository somewhere with card files (look below for details)
 
 ## Install
 
-Easy as:
 ```bash
+make start
+```
+
+OR
+
+```bash
+cp ./config/parameters.yml.dist ./config/parameters.yml
 composer install
 ```
 
 ## Commands
+
+With Docker how i can run something from the Console ?
+
+```bash
+docker-compose run --rm tools bin/console
+```
 
 How to "convert" the repository to a CSV file ?
 ```bash
@@ -34,7 +51,7 @@ Exemple:
 ```
 The card will have the tag1 and tag2.
 
-Card content exemple:
+Card content example:
 ```
 tags: some,tags,list,comma,separated
 -----

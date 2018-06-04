@@ -4,3 +4,4 @@
 /export/*
 !/export/.gitkeep
 /docker-compose.override.yml
+/config/parameters.yml
